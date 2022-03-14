@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 * {
@@ -9,6 +10,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  height: 100%;
 }
 
 a {
@@ -55,8 +57,7 @@ button {
   border-radius: 6rem;
   background: none;
   background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-size: 1rem;
   color: white;
   padding: 1rem;
   box-shadow: 1px 2px 12px -1px rgba(90, 90, 90, 0.349);
@@ -96,6 +97,136 @@ button:hover {
   visibility: hidden;
 }
 
+.loader__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.856);
+  z-index: 100;
+  animation: disappear 0.3s;
+  animation-delay: 2.7s;
+  animation-fill-mode: both;
+}
+
+.loader__bounce {
+  height: 100%;
+  display: flex;
+  font-size: 2rem;
+  font-family: "Shrikhand", cursive;
+  justify-content: center;
+  align-items: center;
+}
+
+.o,
+.h,
+.m,
+.y,
+.f,
+.d {
+  font-size: 2rem;
+  background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-20px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes disappear {
+  50% {
+    opacity: 40%;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+#o1 {
+  animation: bounce 1s ease infinite;
+  animation-iteration-count: 3;
+}
+
+.h {
+  animation: bounce 1s ease infinite 0.1s;
+  animation-iteration-count: 3;
+}
+
+.m {
+  animation: bounce 1s ease infinite 0.2s;
+  animation-iteration-count: 3;
+}
+
+.y {
+  animation: bounce 1s ease infinite 0.3s;
+  animation-iteration-count: 3;
+}
+
+.f {
+  animation: bounce 1s ease infinite 0.4s;
+  animation-iteration-count: 3;
+}
+
+#o2 {
+  animation: bounce 1s ease infinite 0.5s;
+  animation-iteration-count: 3;
+}
+
+#o3 {
+  animation: bounce 1s ease infinite 0.6s;
+  animation-iteration-count: 3;
+}
+
+.d {
+  animation: bounce 1s ease infinite 0.7s;
+  animation-iteration-count: 3;
+}
+
+.slideup {
+  animation-duration: 600ms;
+  animation-name: slideup;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 0;
+}
+
+.delay_100 {
+  animation-delay: 100ms;
+}
+
+.delay_200 {
+  animation-delay: 200ms;
+}
+
+@keyframes slideup {
+  0% {
+    top: 70px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -114,12 +245,12 @@ header img {
   height: 3rem;
 }
 .location input {
-  width: 7rem;
+  width: 9rem;
   border-color: transparent;
   background-color: transparent;
   text-align: center;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .location input::placeholder {
   color: #353535;
@@ -133,6 +264,7 @@ header img {
 .intro h1 {
   margin: 0;
   padding: 0 1.8rem;
+  font-size: 1.5rem;
 }
 .intro h3 {
   font-weight: lighter;
@@ -149,7 +281,7 @@ header img {
   display: flex;
   align-items: center;
   position: relative;
-  margin: 0.8rem 0;
+  margin: 1.5rem 0;
   box-shadow: 1px 2px 12px -1px rgba(90, 90, 90, 0.349);
 }
 .howto .card__howto .number {
@@ -175,18 +307,16 @@ header img {
 .howto .card__howto:hover i {
   color: #9356dc;
 }
-.howto .card__howto span {
-  white-space: pre-wrap;
-}
 
 .restaurant {
   padding: 2rem 1.5rem;
+  background-color: #f6f6f6;
 }
 .restaurant .card {
   border-radius: 1rem;
   box-shadow: 1px 2px 12px -1px rgba(90, 90, 90, 0.349);
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 .restaurant .card__image {
   width: 100%;
@@ -267,8 +397,8 @@ main {
   padding: 0 1rem;
   border-radius: 2rem 2rem 0 0;
   position: absolute;
-  background-color: white;
   top: 13rem;
+  background-color: white;
 }
 .menu .title {
   display: flex;
@@ -312,6 +442,7 @@ main {
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
+  background-color: white;
 }
 .dish .detail {
   width: 100%;
@@ -344,7 +475,7 @@ main {
   height: 100%;
   border-radius: 0 1rem 1rem 0;
   background-color: #99e2d0;
-  transition: all 250ms linear;
+  transition: all 250ms cubic-bezier(0.39, 0.91, 0.28, 0.78);
   transform-origin: right;
   transform: translate(9rem);
   text-align: center;
