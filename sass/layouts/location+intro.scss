@@ -6,12 +6,12 @@
   height: 3rem;
 
   input {
-    width: 7rem;
+    width: 9rem;
     border-color: transparent;
     background-color: transparent;
     text-align: center;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
     &::placeholder {
       color: $dark-gray-color;
     }
@@ -26,6 +26,7 @@
   h1 {
     margin: 0;
     padding: 0 1.8rem;
+    font-size: 1.5rem;
   }
 
   h3 {

@@ -1,11 +1,12 @@
 .restaurant {
   padding: 2rem 1.5rem;
+  background-color: $light-gray-color;
 
   .card {
     border-radius: 1rem;
     box-shadow: $box-shadow;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
 
     &__image {
       width: 100%;
