@@ -6,12 +6,14 @@
 
 .resto__image {
   width: 100%;
-  height: 16rem;
+  height: 40vh;
 
   img {
     width: inherit;
     height: inherit;
     object-fit: cover;
+    z-index: -1;
+    position: relative;
   }
 }
 
@@ -22,7 +24,6 @@
   border-radius: 2.5rem 2.5rem 0 0;
   position: relative;
   margin-top: -2rem;
-  z-index: 100;
   background-color: $light-gray-color;
 
   .title {
