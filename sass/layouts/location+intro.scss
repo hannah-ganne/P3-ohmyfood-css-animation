@@ -15,6 +15,9 @@
     &::placeholder {
       color: $dark-gray-color;
     }
+    &:focus {
+      outline: none;
+    }
   }
 }
 

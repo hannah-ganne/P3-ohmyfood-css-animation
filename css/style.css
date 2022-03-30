@@ -21,6 +21,12 @@ a {
 
 @media screen and (min-width: 768px) {
   .howto > div {
+    max-width: 1440px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+
+  .howto__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -32,6 +38,11 @@ a {
   }
   .card__howto span {
     margin-right: 0.5rem;
+  }
+
+  .restaurant {
+    max-width: 1440px;
+    margin: auto;
   }
 
   .restaurant > div {
@@ -200,34 +211,62 @@ button:hover {
   animation-iteration-count: 3;
 }
 
-.slideup {
-  animation-duration: 0.6s;
-  animation-name: slideup;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  position: absolute;
-  top: 0;
+.dish {
+  animation: slideup 2s ease-out;
 }
 
-.delay_200 {
-  animation-delay: 200ms;
+.dish--1 {
+  animation-delay: 0.15s;
 }
 
-.delay_300 {
-  animation-delay: 300ms;
+.dish--2 {
+  animation-delay: 0.3s;
+}
+
+.dish--3 {
+  animation-delay: 0.45s;
+}
+
+.dish--4 {
+  animation-delay: 0.6s;
+}
+
+.dish--5 {
+  animation-delay: 0.75s;
+}
+
+.dish--6 {
+  animation-delay: 0.9s;
+}
+
+.dish--7 {
+  animation-delay: 1.05s;
+}
+
+.dish--8 {
+  animation-delay: 1.2s;
+}
+
+.dish--9 {
+  animation-delay: 1.35s;
+}
+
+.dish--10 {
+  animation-delay: 1.5s;
+}
+
+.dish--11 {
+  animation-delay: 1.65s;
 }
 
 @keyframes slideup {
   0% {
-    top: 50px;
+    top: 100px;
     opacity: 0;
-  }
-  40% {
-    opacity: 1;
   }
   100% {
     top: 0px;
+    opacity: 1;
   }
 }
 header {
@@ -259,6 +298,9 @@ header #logo_top {
 }
 .location input::placeholder {
   color: #353535;
+}
+.location input:focus {
+  outline: none;
 }
 
 .intro {

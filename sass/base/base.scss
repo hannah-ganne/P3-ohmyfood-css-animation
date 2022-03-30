@@ -21,6 +21,12 @@ a {
 
 @media screen and (min-width: 768px) {
   .howto > div {
+    max-width: 1440px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+
+  .howto__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -33,6 +39,11 @@ a {
     span {
       margin-right: 0.5rem;
     }
+  }
+
+  .restaurant {
+    max-width: 1440px;
+    margin: auto;
   }
 
   .restaurant > div {
