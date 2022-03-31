@@ -107,9 +107,9 @@
   animation: slideup 2s ease-out;
 }
 
-@for $i from 1 through 11 {
+@for $i from 1 through 10 {
   .dish--#{$i} {
-    animation-delay: $i * 0.15s;
+    animation-delay: $i * 0.2s;
   }
 }
 

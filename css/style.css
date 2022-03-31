@@ -216,47 +216,43 @@ button:hover {
 }
 
 .dish--1 {
-  animation-delay: 0.15s;
+  animation-delay: 0.2s;
 }
 
 .dish--2 {
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 
 .dish--3 {
-  animation-delay: 0.45s;
-}
-
-.dish--4 {
   animation-delay: 0.6s;
 }
 
+.dish--4 {
+  animation-delay: 0.8s;
+}
+
 .dish--5 {
-  animation-delay: 0.75s;
+  animation-delay: 1s;
 }
 
 .dish--6 {
-  animation-delay: 0.9s;
-}
-
-.dish--7 {
-  animation-delay: 1.05s;
-}
-
-.dish--8 {
   animation-delay: 1.2s;
 }
 
+.dish--7 {
+  animation-delay: 1.4s;
+}
+
+.dish--8 {
+  animation-delay: 1.6s;
+}
+
 .dish--9 {
-  animation-delay: 1.35s;
+  animation-delay: 1.8s;
 }
 
 .dish--10 {
-  animation-delay: 1.5s;
-}
-
-.dish--11 {
-  animation-delay: 1.65s;
+  animation-delay: 2s;
 }
 
 @keyframes slideup {
