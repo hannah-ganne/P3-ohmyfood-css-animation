@@ -283,6 +283,7 @@ header #logo_top {
   justify-content: center;
   background-color: #eaeaea;
   height: 3rem;
+  box-shadow: -3px 34px 8px -36px rgba(0, 0, 0, 0.44) inset;
 }
 .location input {
   width: 9rem;
