@@ -29,12 +29,13 @@
   .title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     padding: 1rem 0;
 
     .like__btn {
       position: absolute;
-      top: 3rem;
+      top: 2.7rem;
       right: 1rem;
     }
 

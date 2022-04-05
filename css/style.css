@@ -56,6 +56,11 @@ a {
     margin-bottom: 0;
   }
 
+  .menu {
+    max-width: 1440px;
+    margin: auto;
+  }
+
   .course__container {
     display: flex;
     justify-content: space-between;
@@ -533,12 +538,13 @@ footer nav a i {
 .menu .title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   padding: 1rem 0;
 }
 .menu .title .like__btn {
   position: absolute;
-  top: 3rem;
+  top: 2.7rem;
   right: 1rem;
 }
 .menu .title h2 {
